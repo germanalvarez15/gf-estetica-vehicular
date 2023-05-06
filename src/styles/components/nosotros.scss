@@ -1,4 +1,13 @@
+@import '../shared/variables.scss';
+
 section{
     background-color: black;
     height: 80vh; //to remove
+    h2{
+        color: white;
+        font-family: "Roboto Condensed", sans-serif;
+        text-align: center;
+        font-size: 50px;
+        padding-top: 5%;
+    }
 }

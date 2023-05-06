@@ -1,7 +1,7 @@
+import React, { useState } from 'react';
 import "@fontsource/roboto-condensed";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import React, { useState } from 'react';
 import '../../styles/components/navbar.scss';
 const logoImg = require('../../assets/logoWhite.png');
 
