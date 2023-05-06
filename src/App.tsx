@@ -5,6 +5,7 @@ import './styles/components/app.scss';
 function App() {
   return (
     <div className='app'>
+      <div className='img-background kenburns-top'></div>
       <Navbar/>
     </div>
   );
