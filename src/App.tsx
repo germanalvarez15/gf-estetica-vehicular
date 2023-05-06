@@ -9,8 +9,7 @@ function App() {
       <div className='img-background kenburns-top'></div>
       <Navbar/>
       <div className='space-between'></div>
-      <Nosotros/>
-
+          <Nosotros/>
     </div>
   );
 }

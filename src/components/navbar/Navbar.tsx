@@ -1,3 +1,4 @@
+import "@fontsource/roboto-condensed";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import React, { useState } from 'react';
@@ -33,7 +34,19 @@ const Navbar = ()=>{
                     <InstagramIcon sx={{ color: 'white' }}/>
                 </a>
             </div>
-            
+            <div className={`mobile-container ${isHamburgerActive ? 'active' : ''}`}>
+                <a className="hamburger-text" href="/">Nosotros</a>
+                <a className="hamburger-text" href="/create">Proyectos</a>
+                <a className="hamburger-text" href="/create">Agenda</a>
+                <div className="social-media">
+                <a href="https://www.facebook.com/GFEsteticaVehicular/" target="_blank" rel="noreferrer">
+                    <FacebookIcon fontSize="large" sx={{ color: 'white' }}/>
+                </a>
+                <a href="https://www.instagram.com/gf.esteticavehicular" target="_blank" rel="noreferrer">
+                    <InstagramIcon fontSize="large" sx={{ color: 'white' }}/>
+                </a>
+            </div>
+            </div>
         </nav>
     )
 }
