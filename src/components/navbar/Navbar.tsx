@@ -2,16 +2,18 @@ import React, { useState } from 'react';
 import "@fontsource/roboto-condensed";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import LocalCarWashIcon from '@mui/icons-material/LocalCarWash';
 import '../../styles/components/navbar.scss';
+import { Button } from '@mui/material';
 const logoImg = require('../../assets/logoWhite.png');
 
 
-const Navbar = ()=>{
+const Navbar = (props:any)=>{
     const [isHamburgerActive, setIsHamburgerActive] = useState(false);
 
     const onHamburgerClick = () => {
         setIsHamburgerActive(!isHamburgerActive);
-
+        props.onMenuHamburguesaChange(isHamburgerActive);
     }
     return (
         <nav className="navbar">
@@ -24,8 +26,14 @@ const Navbar = ()=>{
             <div className="links">
                 <a className="neon-text" href="/">Nosotros</a>
                 <a className="neon-text" href="/create">Proyectos</a>
-                <a className="neon-text" href="/create">Agenda</a>
+                <a className="neon-text" href="/create">Servicios</a>
             </div>
+            <div className="agenda-button">
+                <Button variant="contained" startIcon={<LocalCarWashIcon />}>
+                Agendate
+                </Button> 
+            </div>
+           
             <div className="social-media">
                 <a href="https://www.facebook.com/GFEsteticaVehicular/" target="_blank" rel="noreferrer">
                     <FacebookIcon sx={{ color: 'white' }}/>
@@ -37,15 +45,20 @@ const Navbar = ()=>{
             <div className={`mobile-container ${isHamburgerActive ? 'active' : ''}`}>
                 <a className="hamburger-text" href="/">Nosotros</a>
                 <a className="hamburger-text" href="/create">Proyectos</a>
-                <a className="hamburger-text" href="/create">Agenda</a>
+                <a className="hamburger-text" href="/create">Servicios</a>
+                <div className="agenda-button">
+                    <Button variant="contained" startIcon={<LocalCarWashIcon />}>
+                        Agendate
+                    </Button> 
+                </div>
                 <div className="social-media">
-                <a href="https://www.facebook.com/GFEsteticaVehicular/" target="_blank" rel="noreferrer">
-                    <FacebookIcon fontSize="large" sx={{ color: 'white' }}/>
-                </a>
-                <a href="https://www.instagram.com/gf.esteticavehicular" target="_blank" rel="noreferrer">
-                    <InstagramIcon fontSize="large" sx={{ color: 'white' }}/>
-                </a>
-            </div>
+                    <a href="https://www.facebook.com/GFEsteticaVehicular/" target="_blank" rel="noreferrer">
+                        <FacebookIcon fontSize="large" sx={{ color: 'white' }}/>
+                    </a>
+                    <a href="https://www.instagram.com/gf.esteticavehicular" target="_blank" rel="noreferrer">
+                        <InstagramIcon fontSize="large" sx={{ color: 'white' }}/>
+                    </a>
+                </div>
             </div>
         </nav>
     )
