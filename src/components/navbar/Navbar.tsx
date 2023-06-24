@@ -24,9 +24,9 @@ const Navbar = (props:any)=>{
                 <span className="bar"></span>
             </div>            
             <div className="links">
-                <a className="neon-text" href="/">Nosotros</a>
-                <a className="neon-text" href="/create">Proyectos</a>
-                <a className="neon-text" href="/create">Servicios</a>
+                <a className="neon-text" href="#nosotros">Nosotros</a>
+                <a className="neon-text" href="#servicios">Servicios</a>
+                <a className="neon-text" href="/create">Galeria</a>
             </div>
             <div className="agenda-button">
                 <Button variant="contained" startIcon={<LocalCarWashIcon />}>

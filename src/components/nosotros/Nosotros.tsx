@@ -6,7 +6,11 @@ const Nosotros = () => {
     return (
         <section id="nosotros" >
             <h2>Nosotros</h2>
-            <img src={nosotrosImg} alt="Nosotros"/>
+            <div className="content">
+                <img src={nosotrosImg} alt="Nosotros"/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Ipsa, voluptate. Quasi, quisquam. Ipsa, voluptate. Quasi, quisquam</p>
+            </div>
+            
         </section>
     )
 }
