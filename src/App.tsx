@@ -4,7 +4,7 @@ import './styles/components/app.scss';
 import Nosotros from './components/nosotros/Nosotros';
 import Servicios from './components/servicios/Servicios';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-
+import Footer from './components/footer/Footer';
 function App() {
   const [menuHamburguesaState, setMenuHamburguesaState] = React.useState(false);
 
@@ -30,8 +30,9 @@ function App() {
       <Nosotros/>
       <Servicios/>
       <a href="http://wa.me/+59895057621" target="_blank" rel="noreferrer">
-        <WhatsAppIcon sx={{ color: 'white', backgroundColor: '#25D366', fontSize: 40, position: 'fixed', bottom: '10px', right: '10px',borderRadius: '30px', padding: '10px' }}/>
+        <WhatsAppIcon sx={{ color: 'white', backgroundColor: '#25D366', fontSize: 40, position: 'fixed', bottom: '75px', right: '20px',borderRadius: '30px', padding: '10px', zIndex: 99 }}/>
       </a>
+      <Footer/>
     </div>
   );
 }

@@ -29,7 +29,7 @@ const Navbar = (props:any)=>{
                 <a className="neon-text" href="/create">Galeria</a>
             </div>
             <div className="agenda-button">
-                <Button variant="contained" startIcon={<LocalCarWashIcon />}>
+                <Button variant="contained" startIcon={<LocalCarWashIcon sx={{ color: 'white' }}/>}>
                 Agendate
                 </Button> 
             </div>

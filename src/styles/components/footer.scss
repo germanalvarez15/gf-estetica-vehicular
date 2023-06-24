@@ -1,0 +1,19 @@
+footer{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+span,b,a{
+    color: gray;
+    font-family: "Roboto Condensed", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+b{
+    margin-left: 1%;
+}
+.author{
+    width: 35%;
+}
